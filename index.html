@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Form</title>
+
+    <style>
+        .forms{
+            text-align: center;
+        }
+
+
+        .form-group{
+            margin: 20px;
+        }
+
+        .text-center{
+            text-align: center;
+        }
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+
+    
+
+
+    <div class="forms">
+        <h1> Javascript Test Form </h1>
+
+   
+            <form method = "POST" action="" name="myForm" id="myForm" onsubmit="return validate()" >
+
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" id="lname" placeholder="input Last name">
+                </div>
+                
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" id="fname" placeholder="input First name">
+                </div>  
+                
+                <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="email" placeholder="input Email Address">
+                </div>  
+
+
+                <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="number" id="phone" placeholder="Input Phone Number">
+                </div>  
+
+
+                <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="password" placeholder="Input Phone Number">
+                </div> 
+
+                <div class="text-center">
+                    <input type="submit" value="submit">
+              
+            </form>
+        </div>
+        
+    </div>
+
+
+
+
+<script>
+
+   function validate(){
+
+    if(document.myForm.lname.value == ""){
+        alert("Please Input Last Name!");
+        return false;
+    }
+
+
+   if(document.myForm.fname.value == ""){
+         alert("Please Input First Name!");
+         return false;
+    }
+
+
+    if(document.myForm.email.value == ""){
+        alert("Please Input Email Address!");
+        return false;
+    }
+
+
+  if(document.myForm.phone.value == ""){
+        alert("Please Input phone!");
+        return false;
+    }
+
+   if(document.myForm.password.value == ""){
+        alert("Please Input password!");
+        return false;
+    }
+
+
+   }
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+    
+    
+</body>
+</html>
